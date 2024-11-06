@@ -1,0 +1,72 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+<!--<![endif]-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecciona el Idioma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .button-container {
+            display: flex;
+			flex-direction: column;
+            gap: 15px;
+        }
+        .button {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+			text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+			display: inline-block;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .button.china {
+            background-color: #de2910; /* Rojo de la bandera de China */
+        }
+        .button.peru {
+            background-color: #d91023; /* Rojo de la bandera de Perú */
+        }
+        .button.us {
+            background-color: #3c3b6e; /* Azul de la bandera de EE.UU */
+        }
+        .button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+       <a href="tupu_es.pdf" class="button peru" target="_blank">ES</a>
+       <a href="tupu_en.pdf" class="button us" target="_blank">EN</a>
+       <a href="tupu_zh.pdf" class="button china" target="_blank">ZH</a>
+    </div>
+
+    <p>&nbsp; </p>
+    <p>&nbsp; </p>
+
+<script>
+        function selectLanguage(country) {
+            alert(`Idioma seleccionado: ${country}`);
+            // Aquí puedes añadir la lógica para cambiar el idioma
+        }
+      </script>
+</body>
+</html>
