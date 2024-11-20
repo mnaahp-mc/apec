@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Patrimoniales Modelado 3D</title>
+    <style>
+        /* Estilo general para la página */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Fondo negro */
+            color: white; /* Texto blanco */
+            font-family: Arial, sans-serif;
+            height: 100vh; /* Asegura que el cuerpo ocupe toda la pantalla */
+            overflow: hidden; /* Elimina barras de desplazamiento */
+        }
+
+        /* Título centrado en la parte superior */
+        header {
+            text-align: center;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%); /* Centra el título horizontalmente */
+            z-index: 10; /* Asegura que el título esté sobre el contenido */
+            font-size: 2em; /* Tamaño del título */
+        }
+
+        /* Asegura que el iframe ocupe toda la pantalla */
+        .sketchfab-embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .sketchfab-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Título -->
+    <header>
+        <h6>Piezas Únicas del Museo Nacional de Arqueología, Antropología e Historia del Perú</h6>
+  
+    </header>
+
+    <!-- Contenedor para el modelo 3D -->
+    <div class="sketchfab-embed">
+        <iframe
+            title="Modelo 3D de Sketchfab"
+            src="https://sketchfab.com/models/8715ef5c07fc4e4eabb1a2b7979cbbdf/embed"
+            allow="fullscreen; autoplay; vr">
+        </iframe>
+    </div>
+</body>
+</html>
