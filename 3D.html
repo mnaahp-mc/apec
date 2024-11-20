@@ -12,6 +12,8 @@
             background-color: black; /* Fondo negro */
             color: white; /* Texto blanco */
             font-family: Arial, sans-serif;
+			height: 100vh; /* Asegura que el cuerpo ocupe toda la pantalla */
+            overflow: hidden; /* Elimina barras de desplazamiento */
         }
 
         /* Cabecera */
@@ -22,8 +24,9 @@
             padding: 10px 20px;
             background-color: black; /* Fondo negro */
             border-bottom: 2px solid #444; /* Línea decorativa opcional */
-            position: sticky; /* Cabecera fija si haces scroll */
+            position: fixed; /* Fija la cabecera en la parte superior */
             top: 0; /* Mantén la cabecera visible */
+			width: 100%; /* Ocupa todo el ancho */
             z-index: 10; /* Asegura que esté sobre otros elementos */
         }
 
@@ -42,10 +45,11 @@
 
         /* Asegura que el iframe sea responsivo */
         .sketchfab-embed {
-            position: relative;
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-            height: 0;
+            height: 100%;
             margin-top: 10px; /* Espaciado para evitar que quede pegado al header */
         }
 
