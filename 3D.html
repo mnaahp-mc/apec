@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Bienes Patrimoniales Modelado 3D</title>
+    <title>Bienes Patrimoniales Modelado 3D</title>
     <style>
         /* Estilo general para la página */
         body {
@@ -22,16 +22,20 @@
             padding: 10px 20px;
             background-color: black; /* Fondo negro */
             border-bottom: 2px solid #444; /* Línea decorativa opcional */
+            position: sticky; /* Cabecera fija si haces scroll */
+            top: 0; /* Mantén la cabecera visible */
+            z-index: 10; /* Asegura que esté sobre otros elementos */
         }
 
         header h1 {
             font-size: 1.5em;
-            margin: 0;
-			text-align: center;
+            margin: 0 auto; /* Centra el texto horizontalmente */
+            text-align: center;
+            flex: 1; /* Ocupa todo el espacio central */
         }
 
         header img {
-           	max-height: auto; /* Máxima altura opcional */
+            max-height: 60px; /* Ajusta la altura máxima del logo */
             height: auto; /* Conserva proporciones naturales */
             width: auto; /* Conserva el tamaño original del logo */
         }
@@ -42,6 +46,7 @@
             width: 100%;
             padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
             height: 0;
+            margin-top: 10px; /* Espaciado para evitar que quede pegado al header */
         }
 
         .sketchfab-embed iframe {
@@ -57,7 +62,7 @@
 <body>
     <!-- Cabecera con título y logo -->
     <header>
-        <h1>Piezas Unicas</h1>
+        <h1>Piezas Únicas</h1>
         <img src="LOGO_MNAAHP.png" alt="Logo" />
     </header>
 
@@ -70,4 +75,4 @@
         </iframe>
     </div>
 </body>
-</html
+</html>
