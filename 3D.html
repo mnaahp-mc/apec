@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Bienes Patrimoniales Modelado 3D</title>
+    <style>
+        /* Estilo general para la página */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Fondo negro */
+            color: white; /* Texto blanco */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Cabecera */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Título a la izquierda, logo a la derecha */
+            padding: 10px 20px;
+            background-color: black; /* Fondo negro */
+            border-bottom: 2px solid #444; /* Línea decorativa opcional */
+        }
+
+        header h1 {
+            font-size: 1.5em;
+            margin: 0;
+			text-align: center;
+        }
+
+        header img {
+           	max-height: auto; /* Máxima altura opcional */
+            height: auto; /* Conserva proporciones naturales */
+            width: auto; /* Conserva el tamaño original del logo */
+        }
+
+        /* Asegura que el iframe sea responsivo */
+        .sketchfab-embed {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+            height: 0;
+        }
+
+        .sketchfab-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera con título y logo -->
+    <header>
+        <h1>Piezas Unicas</h1>
+        <img src="LOGO_MNAAHP.png" alt="Logo" />
+    </header>
+
+    <!-- Contenedor para el modelo 3D -->
+    <div class="sketchfab-embed">
+        <iframe
+            title="Modelo 3D de Sketchfab"
+            src="https://sketchfab.com/models/8715ef5c07fc4e4eabb1a2b7979cbbdf/embed"
+            allow="fullscreen; autoplay; vr">
+        </iframe>
+    </div>
+</body>
+</html
